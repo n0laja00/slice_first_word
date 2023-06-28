@@ -39,6 +39,7 @@ fn main() {
 
     // Method 2 using Vectors
     let long_example_string = "Hello, what a nice day we're having! Oh my God!'";
+    //Notice that we're using an str reference.
     let words: Vec<&str> = long_example_string.split_whitespace().collect(); //We're calling split_whitespace() method on the long_example_string. 
     //The iterator returns the substrings that are separated by a whitespace. Collect() method transforms the iterator (inserts results) into a collection, so the vector "words"
     // Printing for vectors is done so (:?). :#? for pretty print
